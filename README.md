@@ -1,6 +1,5 @@
 # Quote-verse
 A clean, responsive web application that delivers daily inspiration through curated motivational quotes. Features auto-rotation, category filtering, dark mode, and social sharing. Built with HTML, CSS, and vanilla JavaScript.
-Author - Pradeep Madival
 # QuoteVerse 🌟
 
 > A clean, modern web application delivering daily inspiration through curated motivational quotes
@@ -155,9 +154,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**[Your Name]**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+**[Pradeep Madival]**
 
 ## 🙏 Acknowledgments
 
