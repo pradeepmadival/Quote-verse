@@ -72,26 +72,7 @@ Theme switching is handled by toggling CSS classes with preference saved in brow
 ### Category Filtering
 Dynamic filtering allows users to view quotes from specific categories. The system filters both default and user-added quotes seamlessly.
 
-## 📸 Screenshots
 
-<table>
-  <tr>
-    <td><img src="screenshots/home-light.png" alt="Home Light Mode" /></td>
-    <td><img src="screenshots/home-dark.png" alt="Home Dark Mode" /></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Light Mode</b></td>
-    <td align="center"><b>Dark Mode</b></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/categories.png" alt="Categories" /></td>
-    <td><img src="screenshots/add-quote.png" alt="Add Quote" /></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Categories Page</b></td>
-    <td align="center"><b>Add Quote Form</b></td>
-  </tr>
-</table>
 
 ## 🎨 Design Highlights
 
