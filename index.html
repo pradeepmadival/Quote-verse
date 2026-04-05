@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuoteVerse - Inspirational Quotes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#" onclick="showPage('home')">
+            <i class="fas fa-quote-left"></i> QuoteVerse
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#" onclick="showPage('home')">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('categories')">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('add-quote')">Add Quote</a></li>
+                <li class="nav-item">
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HOME PAGE -->
+<div id="home" class="page active">
+    <div class="hero">
+        <h1>Welcome to QuoteVerse</h1>
+        <p>Discover wisdom that inspires and motivates</p>
+    </div>
+
+    <div class="container">
+        <!-- Quote of the Day -->
+        <div class="qotd-section">
+            <div class="qotd-label">✨ Quote of the Day</div>
+            <div class="qotd-card">
+                <p class="qotd-text" id="qotdText"></p>
+                <p class="qotd-author" id="qotdAuthor"></p>
+            </div>
+        </div>
+
+        <!-- Main Quote Display -->
+        <div class="quote-card">
+            <div class="quote-display" id="quoteDisplay">
+                <p class="quote-text" id="quoteText"></p>
+                <p class="quote-author" id="quoteAuthor"></p>
+            </div>
+            
+            <div class="quote-actions">
+                <button class="action-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="fas fa-heart"></i> Like <span id="likeCount"></span>
+                </button>
+                <button class="action-btn" onclick="shareQuote()">
+                    <i class="fas fa-share-alt"></i> Share
+                </button>
+            </div>
+            
+            <button class="play-btn" onclick="togglePlay()" id="playBtn">
+                <i class="fas fa-pause"></i>
+            </button>
+        </div>
+
+        <!-- Use Cases -->
+        <h3 class="text-center mb-4">Why Use QuoteVerse?</h3>
+        <div class="usecase-grid">
+            <div class="usecase-card">
+                <div class="usecase-icon">🌅</div>
+                <h5>Morning Motivation</h5>
+                <p>Start your day with inspiration</p>
+            </div>
+            <div class="usecase-card">
+                <div class="usecase-icon">📚</div>
+                <h5>Study Breaks</h5>
+                <p>Refresh your mind while learning</p>
+            </div>
+            <div class="usecase-card">
+                <div class="usecase-icon">💪</div>
+                <h5>Daily Boost</h5>
+                <p>Get motivated anytime you need</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CATEGORIES PAGE -->
+<div id="categories" class="page">
+    <div class="hero">
+        <h1>Browse by Category</h1>
+        <p>Find quotes that match your mood</p>
+    </div>
+    <div class="container">
+        <div class="row" id="categoryGrid"></div>
+    </div>
+</div>
+
+<!-- ADD QUOTE PAGE -->
+<div id="add-quote" class="page">
+    <div class="hero">
+        <h1>Add Your Quote</h1>
+        <p>Share your favorite quotes</p>
+    </div>
+    <div class="container">
+        <div class="form-card">
+            <div id="message"></div>
+            <form onsubmit="addQuote(event)">
+                <div class="mb-3">
+                    <label class="form-label">Quote Text</label>
+                    <textarea class="form-control" id="newText" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Author</label>
+                    <input type="text" class="form-control" id="newAuthor" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Category</label>
+                    <select class="form-control" id="newCategory" required>
+                        <option value="">Select category</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Add Quote</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 QuoteVerse. Inspiring minds, one quote at a time.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
