@@ -4,8 +4,6 @@ A clean, responsive web application that delivers daily inspiration through cura
 
 > A clean, modern web application delivering daily inspiration through curated motivational quotes
 
-![QuoteVerse Preview](screenshots/home-light.png)
-
 ## 🎯 Overview
 
 QuoteVerse is a minimalist inspirational quotes platform built with vanilla JavaScript. It demonstrates modern web development practices with a focus on clean code, user experience, and responsive design - all in just 425 lines of code.
